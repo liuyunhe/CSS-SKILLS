@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #layout1{
+            background:red;
+        }
+        #layout1 .left{
+            float:left;
+            width:20%;
+            height:200px;
+            background:blue;
+            line-height:200px;
+        }
+        #layout1 .right{
+            float:right;
+            width:30%;
+            height:80px;
+            background:yellow;
+            line-height:80px;
+        }
+        #layout1 .clear{
+            clear:both;
+        }
+    </style>
+    <style type="text/css">
+        #layout2{
+            background:red;
+            *zoom: 1;
+        }
+        #layout2:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+        #layout2 .left{
+            float:left;
+            width:20%;
+            height:200px;
+            background:blue;
+            line-height:200px;
+        }
+        #layout2 .right{
+            float:right;
+            width:30%;
+            height:80px;
+            background:yellow;
+            line-height:80px;
+        }
+    </style>
+    <style type="text/css">
+        #layout3{
+            background: red;
+        }
+        #layout3:after{
+            content: ".";
+            visibility: hidden;
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        #layout3 .left{
+            float:left;
+            width:20%;
+            height:200px;
+            background:blue;
+            line-height:200px;
+        }
+        #layout3 .right{
+            float:right;
+            width:30%;
+            height:80px;
+            background:yellow;
+            line-height:80px;
+        }
+    </style>
+    <style type="text/css">
+        #layout4{
+            overflow:auto;
+            background:red;
+        }
+        #layout4 .left{
+            float:left;
+            width:20%;
+            height:200px;
+            background:blue;
+            line-height:200px;
+        }
+        #layout4 .right{
+            float:right;
+            width:30%;
+            height:80px;
+            background:yellow;
+            line-height:80px;
+        }
+    </style>
+</head>
+<body>
+<div id="layout1">
+    <div class="left">Left</div>
+    <div class="right">Right</div>
+    <div class="clear"></div>
+</div>
+<div id="layout2">
+    <div class="left">Left</div>
+    <div class="right">Right</div>
+    <div class="clear"></div>
+</div>
+<div id="layout3">
+    <div class="left">Left</div>
+    <div class="right">Right</div>
+    <div class="clear"></div>
+</div>
+<script >
+
+</script>
+</body>
+</html>
